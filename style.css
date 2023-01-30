@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    background-color: aliceblue;
+}
+
+.content {
+    min-width: 40rem;
+}
+
+@media(max-width:400px) {
+    .content {
+        min-width: 80%;
+    }
+}
+
+.content__search {
+    background-color: white;
+    display: flex;
+}
+
+.content__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #d5dfe8;
+    max-width: 40rem;
+}
+
+.content__card-item {
+    margin: 0.3rem;
+    border: 5px solid #93a0ad;
+    background-color: #aab5bf;
+    padding: 1rem 1.2rem;
+}
+
+.content__card-item--shimer {
+    width: 256px;
+    height: 256px;
+    background-color: #d5dfe8;
+}
+
+
+.content__button {
+    letter-spacing: 5px;
+    padding: 0 1rem;
+    margin: 0.5rem;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: lightsteelblue;
+}
+
+.content__button:hover {
+    color: whitesmoke;
+    background-color: #8a9fde;
+}
+
+@media(max-width:400px) {
+    .content__button {
+        letter-spacing: 2px;
+        padding: 0 0.3rem;
+    }
+}
+
+input {
+    font-family: inherit;
+    padding: 1.5rem;
+    border: none;
+    flex-grow: 2;
+}
+
+input:focus {
+    outline: none;
+}
+
+.content__search:focus-within {
+    outline: 1px solid darkgrey;
+}
+
+.header {
+    margin-bottom: 1rem;
+    color: white;
+    background-color: #8a9fde;
+    padding: 0.5rem 1rem;
+}
+
+.content__loading_text {
+    text-align: center;
+    color: lightslategray;
+}
