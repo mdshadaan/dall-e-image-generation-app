@@ -5,7 +5,7 @@
   "description": "A small app that uses open-ai api to generate images based on given prompt",
   "scripts": {
     "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "deploy":"gh-pages -d dist",
     "start": "parcel index.html",
     "build": "parcel build index.html",
     "test": "jest"
