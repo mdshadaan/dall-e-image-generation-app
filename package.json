@@ -3,7 +3,6 @@
   "homepage":"http://mdshadaan.github.io/dall-e-image-generation-app",
   "version": "1.0.0",
   "description": "A small app that uses open-ai api to generate images based on given prompt",
-  "main": "index.js",
   "scripts": {
     "predeploy":"npm run build",
     "deploy":"gh-pages -d build",
